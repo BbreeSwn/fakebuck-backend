@@ -1,0 +1,7 @@
+pnpm add prisma
+    pnpm prisma migrate dev --name 'init'
+pnpm add express
+pnpm add dotenv
+
+** run server เรียบร้อยแล้ว ให้ติดตั้ง  cors เพื่อดักจับ  middleware และเพื่อให้  domain ที่ไม่ตรงกันคุยกันได้
+pnpm add cors
