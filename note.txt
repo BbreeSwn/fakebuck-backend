@@ -5,3 +5,9 @@ pnpm add dotenv
 
 ** run server เรียบร้อยแล้ว ให้ติดตั้ง  cors เพื่อดักจับ  middleware และเพื่อให้  domain ที่ไม่ตรงกันคุยกันได้
 pnpm add cors
+
+** ทดสอบ error โดยการยิง postman แล้ว ให้ติดตั้ง morgan เอาไว้ logger message
+pnpm add morgan >> GET /login 404 2.703 ms - 64
+
+**ติดตั้ง limit rate ป้องกันการ send request  ที่มากเกินไป จาก 1 ip
+pnpm add express-rate-limit
