@@ -11,3 +11,20 @@ pnpm add morgan >> GET /login 404 2.703 ms - 64
 
 **ติดตั้ง limit rate ป้องกันการ send request  ที่มากเกินไป จาก 1 ip
 pnpm add express-rate-limit
+
+หลังจากเตรียมหน้า register จากฝั่ง frontend เรียบร้อยแล้ว ก็มาจัดการในส่วนของ API endpoint
+
+--- Register
+POST /auth/refister
+BODY
+    firstName
+    lastName
+    emailOrMobile
+    password
+    confirmPassword
+RESPONSE
+    200 message
+    400 message
+    500 message
+
+หลังจาก Design Endpoint  แล้ว ก็ไปจัดการ Routing ค่อยๆทำไปทีละส่วน
