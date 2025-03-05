@@ -28,3 +28,11 @@ RESPONSE
     500 message
 
 หลังจาก Design Endpoint  แล้ว ก็ไปจัดการ Routing ค่อยๆทำไปทีละส่วน
+
+pnpm add joi เพื่อนำมา validate ที่ middleware
+
+pnpm add bcrypyjs ติดตั้งเพื่อใช้ hash password
+
+สร้าง model Prisma  เพื่อเรียกใช้ client ต่างๆของ prisma โดยไม่ต้องไปสร้างซ้ำๆ
+
+สร้าง utils เพื่อ createError และเรียก Errorไปใช้
