@@ -16,6 +16,7 @@ authController.register = async (req, res, next) => {
     if (exitUser) {
       createError({
         message: "email or mobile already in use",
+        field: 'emailOrMobile',
         statusCode: 400,
       });
     }
