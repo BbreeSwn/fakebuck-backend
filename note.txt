@@ -36,3 +36,15 @@ pnpm add bcrypyjs ติดตั้งเพื่อใช้ hash password
 สร้าง model Prisma  เพื่อเรียกใช้ client ต่างๆของ prisma โดยไม่ต้องไปสร้างซ้ำๆ
 
 สร้าง utils เพื่อ createError และเรียก Errorไปใช้
+
+หลังจากจัดการกับขั้นตอนการ validate-register , validate-login จาก frontend แล้วก้มีเตรียมดึงข้อมูลจาก  database 
+
+--- login
+POST /auth/login
+BODY
+    emailOrMobile
+    password
+RESPONSE
+    200 accessToken //ถ้า login สำเร็จก็เอา acc ไป pnpm add jsonwebtoken
+    400 message //ยืนยันไม่สำเร็จ
+    500 message 

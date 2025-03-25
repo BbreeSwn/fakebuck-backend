@@ -23,6 +23,11 @@ exports.registerSchema = Joi.object({
   }),
 });
 
+exports.loginSchema = Joi.object({
+emailOrMobile: Joi.string().required(),
+password: Joi.string().required()
+})
+
 
 
 
